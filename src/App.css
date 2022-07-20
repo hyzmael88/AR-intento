@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+model-viewer{
+  width: 600px;
+  height: 1000px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +40,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+model-viewer{
+  height: 500px;
+  width: 500px;
 }
