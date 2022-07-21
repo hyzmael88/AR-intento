@@ -20,7 +20,7 @@ function App() {
         <div className="update-bar"></div>
     </div>
     <button slot="ar-button" id="ar-button">
-        View in your space
+        Prueba en tu entorno
     </button>
     
     <div id="ar-prompt">
