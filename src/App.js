@@ -6,24 +6,29 @@ import Uno from './assets/poly.glb'
 function App() {
   return (
     <>
-      <p>hola</p>
       {/* <model-viewer bounds="tight" enable-pan src={Cobra} ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
-    <div class="progress-bar hide" slot="progress-bar">
-        <div class="update-bar"></div>
+    <div className="progress-bar hide" slot="progress-bar">
+        <div className="update-bar"></div>
     </div>
     <button slot="ar-button" id="ar-button">
         View in your space
     </button>
    
 </model-viewer> */}
-<model-viewer bounds="tight" enable-pan src={Uno} ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.jpeg" shadow-intensity="2" exposure="1.19" auto-rotate>
-    <div class="progress-bar hide" slot="progress-bar">
-        <div class="update-bar"></div>
+<model-viewer className="center-block" bounds="tight" enable-pan src={Uno} ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.jpeg" shadow-intensity="2" exposure="1.19" auto-rotate>
+    <div className="progress-bar hide" slot="progress-bar">
+        <div className="update-bar"></div>
     </div>
     <button slot="ar-button" id="ar-button">
         View in your space
     </button>
     
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png"/>
+    </div>
+    <button id="ar-failure">
+    AR is not tracking!
+  </button>
 </model-viewer>
 
 
